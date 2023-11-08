@@ -32,4 +32,8 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return Inertia::render('Dashboard');
     })->name('dashboard');
+
+    Route::get('/products', function () {
+        return Inertia::render('Admin/Products/Products');
+    })->name('products');
 });
