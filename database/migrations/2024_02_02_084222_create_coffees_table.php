@@ -15,6 +15,7 @@ class CreateCoffeesTable extends Migration
             $table->json('taste_factors');
             $table->unsignedTinyInteger('strength');
             $table->text('description')->nullable();
+            $table->json('pictures')->nullable();
             $table->timestamps();
         });
     }
